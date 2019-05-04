@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#37474F</item>
+        <item name="colorPrimaryDark">#880E4F</item>
+        <item name="colorAccent">#D500F9</item>
+    </style>
+
+    <!-- Styling my questions headers. -->
+
+    <style name="question_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+
+    <!-- Styling my question lines. -->
+    <style name="question_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">12dp</item>
+    </style>
+
+    <!-- Styling the answers. -->
+
+    <style name="answer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">#00897B</item>
+    </style>
+
+</resources>

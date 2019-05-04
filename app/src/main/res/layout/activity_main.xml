@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:text="Programming Quiz"
+            android:textColor="#AD1457"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_header"
+                android:text="Question1:" />
+
+            <TextView
+                style="@style/question_line"
+                android:text="Which of the following is not a primitive type in Java" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="int" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="char" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="boolean" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="double" />
+
+                <RadioButton
+                    android:id="@+id/apple"
+                    style="@style/answer"
+                    android:text="apple" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_header"
+                android:text="Question2:" />
+
+            <TextView
+                style="@style/question_line"
+                android:text="Can we have multiple classes in a same java file" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/idTrue"
+                    style="@style/answer"
+                    android:text="True" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="False" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_header"
+                android:text="Question3:" />
+
+            <TextView
+                style="@style/question_line"
+                android:text="Which of the following are legal identifiers in java" />
+
+            <CheckBox
+                android:id="@+id/abc"
+                style="@style/answer"
+                android:text="1abc" />
+
+            <CheckBox
+                android:id="@+id/abc_1"
+                style="@style/answer"
+                android:text="abc_1" />
+
+            <CheckBox
+                android:id="@+id/oneAbc"
+                style="@style/answer"
+                android:text="oneAbc" />
+
+            <CheckBox
+                android:id="@+id/final_1"
+                style="@style/answer"
+                android:text="final"/>
+
+            <CheckBox
+                android:id="@+id/is_while"
+                style="@style/answer"
+                android:text="$while" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_header"
+                android:text="Question4:" />
+
+            <TextView
+                style="@style/question_line"
+                android:text="Which of the following is true about String" />
+
+            <CheckBox
+                android:id="@+id/is_mutable"
+                style="@style/answer"
+                android:text="String is mutable" />
+
+            <CheckBox
+                android:id="@+id/not_mutable"
+                style="@style/answer"
+                android:text="String is not mutable" />
+
+            <CheckBox
+                android:id="@+id/not_data_type"
+                style="@style/answer"
+                android:text="String is not a data type" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_header"
+                android:text="Question5:" />
+
+            <TextView
+                style="@style/question_line"
+                android:text="What is Java?" />
+
+            <EditText
+                android:id="@+id/isLanguage"
+                style="@style/answer"
+                android:hint="It's a programming ????" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_header"
+                android:text="Question6:" />
+
+            <TextView
+                style="@style/question_line"
+                android:text="What is the default value of a byte Variable?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/is_zero"
+                    style="@style/answer"
+                    android:text="0" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="0.0" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="null" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="undefined" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:onClick="submit_answer"
+            android:text="Submit my answer"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>
